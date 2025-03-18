@@ -10,7 +10,7 @@ RS-AC-3DGS provides tools to process and convert SLAM results from Active Camera
 You can either use this repository or directly clone the official 3D Gaussian Splatting repository:
 ```bash
 # Option 1: Use this repository
-git clone http://gitlab.robosense.cn/super_sensor_sdk/ros2_sdk/rs_ac_3dgs.git
+git clone https://github.com/RoboSense-Robotics/robosense_ac_3dgs.git
 
 # Option 2: Use official repository
 git clone https://github.com/graphdeco-inria/gaussian-splatting.git
