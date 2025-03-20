@@ -61,7 +61,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-For questions and support, please [open an issue](http://gitlab.robosense.cn/super_sensor_sdk/ros2_sdk/rs_ac_3dgs/issues) on our GitHub repository.
+For questions and support, please [open an issue](https://github.com/RoboSense-Robotics/robosense_ac_3dgs/issues) on our GitHub repository.
 
 
 
