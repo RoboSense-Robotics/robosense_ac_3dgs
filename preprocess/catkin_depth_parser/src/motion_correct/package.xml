@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<package>
+  <name>motion_correction</name>
+  <version>0.1.0</version>
+
+  <description>
+    This project is provided by RoboSense to 
+  </description>
+
+  <maintainer email="mengyang.yao@robosense.cn">Mengyang Yao</maintainer>
+
+  <license>BSD</license>
+
+  <author email="mengyang.yao@robosense.cn">Mengyang Yao</author>
+  
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>pcl_ros</build_depend>
+  <build_depend>cv_bridge</build_depend>
+
+
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>pcl_ros</run_depend>
+  <run_depend>cv_bridge</run_depend>
+
+
+  <test_depend>rostest</test_depend>
+  <test_depend>rosbag</test_depend>
+
+  <export>
+    <launch_type>motion_correction</launch_type>
+  </export>
+</package>

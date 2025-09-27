@@ -1,0 +1,37 @@
+MOTION_CORRECT:
+  MOTION_CORRECT: true
+  USING_IMU_LINEAR_ACCELERATION: false # 使用IMU线加速度数据进行运动补偿
+  USING_ODOM_LINEAR_VELOCITY: false # 使用ODOM数据作为线速度补偿, 如果为true，则会覆盖IMU线加速度计算出来的位移
+  NUM_DRIFT: 100 # 计算零飘所需要的IMU数据数目
+  FRAME_TAIL: true # 将点补偿到点云帧尾时间
+  ORI_POINTS_TOPIC: /rslidar_points_origin #原始点云 + 运动矫正点云获取rgb
+  ORI_RGB_POINTS_TOPIC: /rslidar_points_origin_rgb #原始点云 + 运动矫正点云获取rgb
+  PROJ_IMG_TOPIC: /camera/image_raw/proj_motion
+  # DEPTH_ROOT: /data/ari/3dgs/cartoon_001_v2/filter_depths/
+  DEPTH_ROOT: /media/sti/jixie1/data/ac_data/wanjinglou/filter_depths/
+  # DEPTH_ROOT:  /home/sti/Desktop/data/filter_depths/
+  # SCENE_ROOT: /mnt/road/bev_mapping/data_3dgs/cartoon_001_v2/scene/images
+  SCENE_ROOT: /media/sti/jixie1/data/ac_data/wanjinglou/scene/images
+
+# CALIBRATION_PATH: /mnt/road/bev_mapping/data_3dgs/cartoon_001_v2/calibration.yaml
+CALIBRATION_PATH: /media/sti/jixie1/data/ac_data/wanjinglou/calibration.yaml
+
+# 所有配置结合在一起
+# CAMERA:
+#   ROS_TOPIC: "/image_frame"
+CAMERA:
+  # ROS_TOPIC: "/image_rgb"  ###ac1 1.0
+  ROS_TOPIC: "/rs_camera/rgb"  ###ac1 2.0
+
+
+LIDAR:
+  # ROS_TOPIC: "/depth_frame"
+  # IMU_ROS_TOPIC: "/motion_frame"
+  # NUM_FRAME_SHIFT: 100
+
+  # ROS_TOPIC: "/rslidar_points_meta"   ###ac1 1.0
+  # IMU_ROS_TOPIC: "/rslidar_imuData_meta"  ###ac1 1.0
+  ROS_TOPIC: "/rs_lidar/points"
+  IMU_ROS_TOPIC: "/rs_imu"
+  NUM_FRAME_SHIFT: 100
+

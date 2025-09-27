@@ -1,0 +1,13 @@
+<launch>
+    <!-- Launch file for robosense Airy LiDAR -->
+  
+      <arg name="rviz" default="False" />
+      <arg name="config_file" default="$(find motion_correction)/config/meta_config.yaml" />
+      
+      <node pkg="motion_correction" type="demo_lidar2cam" name="demo_lidar2cam" args="$(arg config_file)" output="screen" />
+  
+      <group if="$(arg rviz)">
+      <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz_motion_correct" args="-d $(find motion_correction)/rviz/motion_correct.rviz" />
+      </group>
+  
+  </launch>
